@@ -1,0 +1,134 @@
+﻿capital = 362
+
+OOB = "CSA_1936"
+
+set_research_slots = 4
+set_stability = 0.75
+set_war_support = 0
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_bomber = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	transport = 1
+	superior_firepower = 1
+	base_strike = 1
+}
+
+add_ideas = {
+	CSA_sour_loser
+}
+
+set_politics = {
+	
+	ruling_party = populist
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+		liberal = 3
+		
+		conservative = 11
+		
+		
+		socialist = 3
+		
+
+		populist = 57
+		
+		
+		anarchist = 26
+	}
+
+set_convoys = 5
+
+create_country_leader = {
+	name = "Douglas MacAurthur"
+	desc = ""
+	picture = "Portrait_CSA_Douglas_MacArthur.dds"
+	expire = "1965.1.1"
+	ideology = populism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Arrington Davis"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_CSA_Douglas_MacArthur.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Louis Jeremiah"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_CSA_Douglas_MacArthur.dds"
+	expire = "1965.1.1"
+	ideology = anarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Douglas Duke"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_CSA_Douglas_MacArthur.dds"
+	expire = "1965.1.1"
+	ideology = authoritarianism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Mark Clark"
+	picture = "Portrait_USA_Mark_W_Clark.dds"
+	traits = { infantry_officer trait_reckless }
+	skill = 4
+
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Douglas MacArthur"
+	id = 57
+	picture = "Portrait_USA_Douglas_MacArthur.dds"
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+	skill = 4
+
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+

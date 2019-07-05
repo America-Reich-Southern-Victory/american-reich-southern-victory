@@ -1,0 +1,146 @@
+﻿capital = 141	
+
+oob = "SWE_1936"
+set_research_slots = 3
+
+add_ideas = {
+	en_svensk_tiger
+	neutrality_idea
+}
+set_stability = 0.9
+set_war_support = 0.1
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gwtank = 1
+	basic_light_tank = 1
+	CAS1 = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+}
+
+set_politics = {
+	
+	ruling_party = socialist
+	last_election = "1932.9.18"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+		liberal = 14
+		
+		conservative = 23
+		
+		socialist = 42
+		
+		authoritarian = 14
+		
+		syndicalist = 4
+		
+		populist = 3
+	}
+
+set_convoys = 25
+set_stability = 0.9
+
+
+
+
+create_country_leader = {
+	name = "Gustav V"
+	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
+	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gustav V"
+	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
+	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gustav V"
+	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
+	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sven Olov Lindholm"
+	desc = "POLITICS_SVEN_OLOV_LINDHOLM_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = populism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sven Linderot"
+	desc = "POLITICS_SVEN_LINDEROT_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Folke Högberg"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { commando }
+	skill = 3
+
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Erik af Edholm"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  hill_fighter }
+	skill = 4
+
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_navy_leader = {
+	name = "Claes Lindström"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	traits = { battleship_adherent blockade_runner }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 3
+}

@@ -1,0 +1,35 @@
+﻿capital = 461
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 20
+
+set_politics = {
+	
+	ruling_party = authoritarian
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+		conservative = 25
+		
+		anarchist = 5
+		
+		authoritarian = 60
+	}
+
+create_country_leader = {
+	name = "Mohammed V"
+	desc = "POLITICS_ANANDYN_AMAR_DESC"
+	picture = GFX_portrait_mon_anandyn_amar
+	expire = "1965.1.1"
+	ideology = authoritarianism
+	traits = {
+		#
+	}
+}

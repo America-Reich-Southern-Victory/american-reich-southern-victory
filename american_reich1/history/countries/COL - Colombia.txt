@@ -1,0 +1,74 @@
+﻿capital = 306
+
+oob = "COL_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+}
+
+set_convoys = 10
+set_politics = {
+	
+	ruling_party = liberal
+	last_election = "1934.2.11"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+		liberal = 55
+		
+		
+		conservative = 33
+		
+		
+		socialist = 4
+		
+
+		populism = 3
+		
+		anarchism = 5
+	}
+
+create_country_leader = {
+	name = "Alfonso López Pumarejo"
+	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
+	picture = "GFX_Portrait_columbia_alfonso_lopez"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mariano Ospina Pérez"
+	desc = "POLITICS_MARIANO_OSPINA_PEREZ_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = conservative
+	traits = {
+		#
+	}
+}
+
+
+
+
+create_corps_commander = {
+	name = "Gustavo Rojas Pinilla"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+	traits = {  trickster urban_assault_specialist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}

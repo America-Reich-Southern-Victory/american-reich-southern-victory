@@ -1,0 +1,79 @@
+﻿capital = 446
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	gw_artillery = 1
+	infantry_weapons1 = 1
+	early_fighter = 1
+}
+
+add_ideas = {
+	EGY_rising_star
+}
+
+set_convoys = 35
+
+
+set_politics = {
+	
+	ruling_party = conservative
+	last_election = "1933.4.4"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+		liberal = 3
+		
+		conservative = 51
+		
+		
+		socialist = 6
+		
+
+		populist = 29
+		
+		
+		anarchist = 11
+	}
+
+create_faction = EGY_cairo_pact
+
+create_country_leader = {
+	name = "Farouk I"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_democratic1.dds"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Farouk I"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Farouk I"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
+	ideology = populism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Hosni al-Arabi"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+	ideology = anarchism
+	traits = {
+		#
+	}
+}

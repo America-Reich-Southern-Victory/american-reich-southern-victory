@@ -1,0 +1,161 @@
+﻿capital = 341
+
+oob = "TUR_1936"
+
+set_research_slots = 3
+set_war_support = 0.36
+set_convoys = 123
+set_stability = 0.45
+
+add_ideas = {
+	limited_conscription
+	free_trade
+	civilian_economy
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	early_fighter = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	transport = 1
+}
+
+set_politics = {
+	
+	ruling_party = autocratic
+	last_election = "1935.2.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+		liberal = 6
+		
+		conservative = 18
+
+		socialist = 5
+		
+		anarchist = 17
+			
+		autocratic = 54
+	}
+
+give_guarantee = GEO
+give_guarantee = AZR
+set_autonomy = {
+	target = ARM
+		autonomous_state = autonomy_puppet
+		}
+set_autonomy = {
+	target = LBA
+		autonomous_state = autonomy_puppet
+		}
+
+create_country_leader = {
+	name = "Mehmed VI"
+	desc = "POLITICS_ISMET_INÖNÜ_DESC"
+	picture = "Portrait_Turkey_Ismet_Inonu.dds"
+	expire = "1965.1.1"
+	ideology = authoritarianism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mehmed VI"
+	desc = "POLITICS_ISMET_INÖNÜ_DESC"
+	picture = "Portrait_Turkey_Ismet_Inonu.dds"
+	expire = "1965.1.1"
+	ideology = autocracy
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sefik Hüsnü"
+	desc = "POLITICS_SEFIK_HUSNU_DESC"
+	picture = "gfx/leaders/TUR/Portrait_Turkey_Sefik_Husnu.dds"
+	expire = "1965.1.1"
+	ideology = anarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Celâl Bayar"
+	desc = "POLITICS_CELAL_BAYAR_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Cemil Cahit Toydemir"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+	traits = { desert_fox }
+	skill = 3
+
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Nazmi Solok"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+	traits = { trickster }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Salih Omurtak"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	traits = {  hill_fighter }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Rauf Orbay"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
+	traits = {  }
+	skill = 2
+}
+
+
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "Dumlupinar Class"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 2
+		sub_engine_upgrade = 2
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 2
+	}
+}
