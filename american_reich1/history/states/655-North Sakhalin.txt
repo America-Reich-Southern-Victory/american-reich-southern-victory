@@ -1,0 +1,23 @@
+
+state={
+	id=655
+	name="STATE_655"
+
+	history={
+		owner = SER
+		add_core_of = SER
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		833 867 6940 9849 9874 
+	}
+	manpower=256750
+	buildings_max_level_factor=1.000
+	state_category=town
+}

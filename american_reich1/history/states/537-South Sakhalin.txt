@@ -1,0 +1,31 @@
+
+state={
+	id=537
+	name="STATE_537"
+	resources={
+		oil=3.000
+	}
+
+	history={
+		owner = JAP
+		buildings = {
+			infrastructure = 3
+			12446 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			12446 1 
+		}
+
+	}
+
+	provinces={
+		855 1322 1742 1755 1820 12446 
+	}
+	manpower=295196
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
