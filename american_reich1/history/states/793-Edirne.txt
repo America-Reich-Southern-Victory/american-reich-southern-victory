@@ -1,0 +1,15 @@
+state={
+	id=793
+	name="STATE_793"
+	history={
+		add_claim_by = GRE
+		owner = TUR
+		add_core_of = TUR
+	}
+	provinces={
+		849 922 3879 3893 6895 11842 
+	}
+	manpower=400000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

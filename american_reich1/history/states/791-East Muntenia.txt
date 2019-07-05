@@ -1,0 +1,30 @@
+state={
+	id=791
+	name="STATE_791"
+	resources={
+		oil=5.000
+	}
+	history={
+	owner = BUL
+	add_core_of = BUL
+	add_core_of = ROM
+	victory_points = {
+			657 3 
+	}
+	buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			657 = {
+				naval_base = 8
+			}
+			dockyard = 1
+		}
+	}
+	provinces={
+		657 687 3076 9635 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category = large_city
+}

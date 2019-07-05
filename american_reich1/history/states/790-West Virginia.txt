@@ -1,0 +1,20 @@
+state={
+	id=790
+	name="STATE_790"
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			air_base = 10
+			}
+		add_core_of = USA
+		}
+		
+	provinces={
+		801 3941 3975 4627 6850 6958 6971 7466 7588 7646 9923 10441 11888 873 951
+	}
+	manpower=1383684
+	state_category=large_city
+	buildings_max_level_factor=1.000
+}

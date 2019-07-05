@@ -1,0 +1,23 @@
+
+state={
+	id=798
+	name="STATE_798"
+
+	history={
+		owner = EGY
+		add_core_of = SSD
+		add_core_of = EGY
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		1953 2096 4033 7996 10764 10857 10859 10877 10908 
+	}
+	manpower=1687573
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

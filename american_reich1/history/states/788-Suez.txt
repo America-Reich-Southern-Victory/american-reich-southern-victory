@@ -1,0 +1,26 @@
+
+state={
+	id=788
+	name="STATE_788"
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 2
+			4073 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = EGY
+
+	}
+
+	provinces={
+		4073 9947 
+	}
+	manpower=31050
+	buildings_max_level_factor=1.000
+	state_category = enclave
+}

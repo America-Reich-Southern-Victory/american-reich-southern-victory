@@ -1,0 +1,34 @@
+state={
+	id=794
+	name="STATE_794"
+	resources={
+		rubber=80.000
+		oil=6.000
+	}
+	history={
+		owner = INF
+		add_core_of = INS
+		add_core_of = INF
+		victory_points = {
+			4608 15
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 3
+			4608 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+	provinces={
+		1209 1413 4306 4390 4608 7223 7642 7654 10135 10479 10491 12277 12293 12472 
+	}
+	manpower=18486720
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,23 @@
+state={
+	id=797
+	name="STATE_797"
+	history={
+		add_core_of = CAM
+		add_core_of = OST
+		add_core_of = IND
+		owner = OST
+		victory_points = {
+			4401 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	provinces={
+		1620 4330 7645 10204 12260 12288 
+	}
+	manpower=1288654
+	buildings_max_level_factor=1.000
+	state_category = rural
+}
