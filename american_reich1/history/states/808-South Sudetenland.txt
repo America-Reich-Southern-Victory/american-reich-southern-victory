@@ -1,0 +1,20 @@
+state={
+	id=808
+	name="STATE_808"
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			anti_air_building = 1
+		}
+		add_core_of = AUS
+		add_claim_by = CZE
+	}
+	provinces={
+		543 557 5283 11525 
+	}
+	manpower=540340
+	buildings_max_level_factor=1.000
+	state_category=town
+}

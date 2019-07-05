@@ -1,0 +1,30 @@
+state={
+	id=803
+	name="STATE_803"
+	
+	resources={
+		tungsten=3
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			4187 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			7060 5 
+		}
+
+	}
+	provinces={
+		4072 4187 5019 7060 7177 7430 10019 10311 10511 
+	}
+	manpower=3740500
+	buildings_max_level_factor=1.000
+	state_category = city
+}

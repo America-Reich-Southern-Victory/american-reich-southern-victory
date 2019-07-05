@@ -1,0 +1,18 @@
+state={
+	id=811
+	name="STATE_811"
+	history={
+		owner = MIT
+		add_core_of = SOM
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
+
+	}
+	provinces={
+		11014 12941 
+	}
+	manpower=18550
+	buildings_max_level_factor=1.000
+}

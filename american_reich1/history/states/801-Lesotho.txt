@@ -1,0 +1,24 @@
+state={
+	id=801
+	name="STATE_801"
+	resources={
+		chromium=5.000
+	}
+
+	history={
+		owner = SAF
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = SAF
+	}
+	manpower=3962157
+	buildings_max_level_factor=1.000
+	state_category=city
+	provinces={
+		4556 
+	}
+	manpower=594000
+	buildings_max_level_factor=1.000
+}

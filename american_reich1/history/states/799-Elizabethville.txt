@@ -1,0 +1,22 @@
+state={
+	id=799
+	name="STATE_799"
+	history={
+		owner = MIT
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			191 3
+		}
+		add_claim_by = COG
+		add_core_of = MIT
+	}
+	provinces={
+		191 1817 4515 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category = city
+}
