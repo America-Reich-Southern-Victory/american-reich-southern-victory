@@ -1,0 +1,11 @@
+focus_tree = {
+	id = czech_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CZE
+		}
+	}
+	default = no
+}

@@ -1,0 +1,11 @@
+focus_tree = {
+	id = new_zealander_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NZL
+		}
+	}
+	default = no
+}

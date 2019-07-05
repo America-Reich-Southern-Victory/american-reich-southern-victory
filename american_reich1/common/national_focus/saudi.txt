@@ -1,0 +1,1173 @@
+focus_tree = { 
+id = saudi_focus
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = SAU 
+}
+}
+continuous_focus_position = { x = 50 y = 2000 } 
+#Focus for Consolidate_Arabia
+focus = { 
+id = SAU_consolidatearabia
+icon = GFX_goal_tripartite_pact
+x = 1
+y = 4
+cost = 15
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_arabianwar } 
+ai_will_do = { 
+ factor = 1
+ }
+ available = {
+ has_war = no
+ }
+ completion_reward = {
+ add_political_power = 100
+ }
+ } 
+
+#Focus for Industrial_Effort
+focus = { 
+id = SAU_industrialeffort
+icon = GFX_goal_generic_production
+x = 5
+y = 1
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_underthehouseofsaud } 
+ai_will_do = { 
+ factor = 1
+ }
+ completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+ } 
+
+#Focus for Construction_Effort
+focus = { 
+id = SAU_constructioneffort
+icon = GFX_goal_generic_construct_civ_factory
+x = 4
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_industrialeffort } 
+ai_will_do = { 
+ factor = 1
+ }
+bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+ complete_tooltip = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+		}			
+	}
+	
+	completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		} 
+
+ } 
+
+#Focus for Armament_Effort
+focus = { 
+id = SAU_armamenteffort
+icon = GFX_goal_generic_construct_mil_factory
+x = 6
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_industrialeffort } 
+ai_will_do = { 
+ factor = 1
+ }
+ bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+ } 
+
+#Focus for Infrastructure_Effort
+focus = { 
+id = SAU_infrastructureeffort
+icon = GFX_goal_generic_construct_infrastructure
+x = 5
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_armamenteffort focus = SAU_constructioneffort } 
+ai_will_do = { 
+ factor = 1
+ }
+ bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+ } 
+
+#Focus for Armament_Effort_II
+focus = { 
+id = SAU_armamenteffortii
+icon = GFX_goal_generic_construct_mil_factory
+x = 6
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_infrastructureeffort } 
+ai_will_do = { 
+ factor = 1
+ }
+ bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+ } 
+
+#Focus for Construction_Effort_II
+focus = { 
+id = SAU_constructioneffortii
+icon = GFX_goal_generic_construct_civ_factory
+x = 4
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_infrastructureeffort } 
+ai_will_do = { 
+ factor = 1
+ }
+ bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+ complete_tooltip = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+		}			
+	}
+	
+	completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+ } 
+
+#Focus for Armament_Effort_III
+focus = { 
+id = SAU_armamenteffortiii
+icon = GFX_goal_generic_construct_mil_factory
+x = 6
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_infrastructureeffortii } 
+ai_will_do = { 
+ factor = 1
+ }
+ bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+ } 
+
+#Focus for Extra_Science_Slot
+focus = { 
+id = SAU_extrascienceslot
+icon = GFX_focus_research2
+x = 5
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_infrastructureeffortiii } 
+ai_will_do = { 
+ factor = 1
+ }
+
+	completion_reward = {
+		add_research_slot = 1
+		}
+ } 
+
+#Focus for Nuclear_Effort
+focus = { 
+id = SAU_nucleareffort
+icon = GFX_focus_rocketry
+x = 6
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_extrascienceslot } 
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 2
+				category = nuclear
+			}
+		}
+
+ } 
+
+#Focus for Join_Cairo_Pact
+focus = { 
+id = SAU_joincairopact
+icon = GFX_goal_anschluss
+x = 0
+y = 6
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_claimsonhejaz } 
+mutually_exclusive = { focus = SAU_ironarabia } 
+ai_will_do = { 
+ factor = 1
+ }
+ completion_reward = {
+ EGY = { add_to_faction = SAU }
+ }
+ } 
+
+#Focus for Iron_Arabia
+focus = { 
+id = SAU_ironarabia
+icon = GFX_goal_generic_political_pressure
+x = 2
+y = 6
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_claimsonhejaz } 
+mutually_exclusive = { focus = SAU_joincairopact } 
+ai_will_do = { 
+ factor = 1
+ }
+ available = {
+			is_subject = no
+			NOT = { is_in_faction_with = EGY }
+			NOT = { has_war_with = EGY }
+			}
+			cancel = {
+			is_in_faction_with = EGY
+			}
+			completion_reward = {
+			add_political_power = 120
+			set_rule = { can_create_factions = yes }
+			create_faction = "Arabian Shield"
+			}
+		}
+
+#Focus for Cairo_Tech
+focus = { 
+id = SAU_cairotech
+icon = GFX_goal_tfv_generic_tech_sharing
+x = 0
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_joincairopact } 
+ai_will_do = { 
+ factor = 1
+ }
+ available = {
+	is_in_faction = yes
+	}
+	completion_reward = {
+			if = {
+				limit = {
+					original_research_slots < 3
+				}
+				add_research_slot = 1
+			}
+			if = {
+				limit = {
+					original_research_slots > 2
+				}
+				add_tech_bonus = {
+					name = electronics_bonus
+					bonus = 1.0
+					uses = 1
+					category = electronics
+				}
+				add_tech_bonus = {
+					name = industrial_bonus
+					bonus = 1.0
+					uses = 1
+					category = industry
+				}	
+				add_tech_bonus = {
+					name = infantry_artillery_bonus #@#
+					bonus = 1.0
+					uses = 1
+					category = infantry_weapons
+					category = artillery
+				}				
+			}			
+		}
+ } 
+
+#Focus for Iron_Army
+focus = { 
+id = SAU_ironarmy
+icon = GFX_goal_generic_axis_build_infantry
+x = 2
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_ironarabia } 
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward = {
+ add_manpower = 250000
+	}
+ } 
+
+#Focus for Ottoman_War
+focus = { 
+id = SAU_ottomanwar
+icon = GFX_goal_generic_major_war
+x = 0
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_cairotech focus = SAU_ironarmy } 
+mutually_exclusive = { focus = SAU_treatyofcairo } 
+ai_will_do = { 
+ factor = 1
+ }
+ available = {
+ NOT = { is_in_faction_with = TUR }
+ is_subject = no
+ }
+ completion_reward = {
+ add_threat = 10
+ declare_war_on = {
+    target = TUR
+    type = annex_everything
+}
+ }
+ bypass = {
+ has_war_with = TUR
+ }
+ cancel = {
+	is_in_faction_with = TUR
+	has_war_with = TUR
+		}
+ } 
+
+#Focus for Treaty_of_Cairo
+focus = { 
+id = SAU_treatyofcairo
+icon = GFX_goal_generic_intelligence_exchange
+x = 2
+y = 8
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_cairotech focus = SAU_ironarmy } 
+mutually_exclusive = { focus = SAU_ottomanwar } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for A_United_Arabia
+focus = { 
+id = SAU_aunitedarabia
+icon = GFX_goal_generic_demand_territory
+x = 1
+y = 9
+cost = 15
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_ottomanwar focus = SAU_treatyofcairo } 
+ai_will_do = { 
+ factor = 1
+ } 
+ available = {
+ has_war = no
+ }
+ completion_reward = {
+ add_political_power = 100
+ }
+ } 
+
+#Focus for Arabian_War
+focus = { 
+id = SAU_arabianwar
+icon = GFX_goal_generic_major_war
+x = 1
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_omandefense } 
+prerequisite = { focus = SAU_yemendefense } 
+ai_will_do = { 
+ factor = 1
+ }
+ available = {
+ NOT = { is_in_faction_with = OMA }
+ NOT = { is_in_faction_with = YEM }
+ is_subject = no
+ }
+ completion_reward = {
+ add_threat = 10
+ declare_war_on = {
+    target = YEM
+    type = annex_everything
+}
+declare_war_on = {
+    target = OMA
+    type = annex_everything
+}
+ }
+ bypass = {
+ has_war_with = YEM
+ OR = {
+ has_war_with = OMA
+ }
+ OR = {
+ has_war_with = OMA
+ has_war_with = YEM
+ }
+ }
+ cancel = {
+	is_in_faction_with = OMA
+	has_war_with = OMA
+	OR = {
+	is_in_faction_with = YEM
+	has_war_with = YEM
+	}
+	OR = {
+	is_in_faction_with = YEM
+	has_war_with = YEM
+	is_in_faction_with = OMA
+	has_war_with = OMA
+	}
+ }
+} 
+
+#Focus for Claims_on_Hejaz
+focus = { 
+id = SAU_claimsonhejaz
+icon = GFX_goal_generic_forceful_treaty
+x = 1
+y = 5
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_consolidatearabia } 
+ai_will_do = { 
+ factor = 1
+ }
+ completion_reward = {
+ add_state_core = 679
+ add_political_power = 75
+ }
+
+ } 
+
+#Focus for Extra_Science_Slot_II
+focus = { 
+id = SAU_extrascienceslotii
+icon = GFX_focus_research2
+x = 4
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_extrascienceslot } 
+ai_will_do = { 
+ factor = 1
+ }
+		completion_reward = {
+		add_research_slot = 1
+		}
+
+ } 
+
+#Focus for Construction_Effort_III
+focus = { 
+id = SAU_constructioneffortiii
+icon = GFX_goal_generic_construct_civ_factory
+x = 4
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_infrastructureeffortii } 
+ai_will_do = { 
+ factor = 1
+ } 
+ bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+ complete_tooltip = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+		}			
+	}
+	
+	completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+ } 
+
+#Focus for Under_the_House_of_Saud
+focus = { 
+id = SAU_underthehouseofsaud
+icon = GFX_goal_tfv_strengthen_commonwealth_ties
+x = 3
+y = 0
+cost = 5
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ }
+ available = {
+ has_government = autocratic
+ }
+ completion_reward = {
+ add_political_power = 120
+ }
+
+ } 
+
+#Focus for Prepare_for_War_SAU
+focus = { 
+id = SAU_prepareforwarsau
+icon = GFX_goal_generic_occupy_states_ongoing_war
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_underthehouseofsaud } 
+ai_will_do = { 
+ factor = 1
+ }
+ available = {
+ has_war = no
+ }
+ completion_reward = {
+	add_political_power = 100
+	add_manpower = 50000
+	army_experience = 25
+	}
+ } 
+
+#Focus for Oman_Defense
+focus = { 
+id = SAU_omandefense
+icon = GFX_goal_generic_construct_military
+x = 0
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_prepareforwarsau } 
+ai_will_do = { 
+ factor = 1
+ }
+ available = {
+	has_war = no
+		}
+ completion_reward = {
+ 678 = {
+ add_building_construction = {
+    type = bunker
+    level = 6
+    instant_build = yes
+    province = 10870
+	province = 8030
+	province = 12768
+	}
+	}
+	add_political_power = 75
+	add_manpower = 25000
+	army_experience = 10
+ }
+ } 
+
+#Focus for Yemen_Defense
+focus = { 
+id = SAU_yemendefense
+icon = GFX_goal_generic_construct_military
+x = 2
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_prepareforwarsau } 
+ai_will_do = { 
+ factor = 1
+ }
+ available = {
+	has_war = no
+}
+ completion_reward = {
+ 678 = {
+ add_building_construction = {
+    type = bunker
+    level = 6
+    instant_build = yes
+    province = 4932
+	province = 8118
+	province = 12740
+	}
+	}
+ add_political_power = 75
+	add_manpower = 25000
+	army_experience = 10
+ }
+ }
+
+#Focus for Infrastructure_Effort_II
+focus = { 
+id = SAU_infrastructureeffortii
+icon = GFX_goal_generic_construct_infrastructure
+x = 5
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_consolidatearabia } 
+prerequisite = { focus = SAU_armamenteffortii } 
+prerequisite = { focus = SAU_constructioneffortii } 
+ai_will_do = { 
+ factor = 1
+ }
+ bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+ } 
+
+#Focus for Infrastructure_Effort_III
+focus = { 
+id = SAU_infrastructureeffortiii
+icon = GFX_goal_generic_construct_infrastructure
+x = 5
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SAU_infrastructureeffortii } 
+ai_will_do = { 
+ factor = 1
+ }
+ bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+ } 
+
+#End of focuses 
+ }
