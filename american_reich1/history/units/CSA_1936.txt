@@ -1,0 +1,186 @@
+division_template = {
+	name = "Infantry Division"
+
+	division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Barrel Division"
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+	}
+}
+
+# Richmond
+
+units = {
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Dixiemen"
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Flood Letters"
+		location = 3823
+		division_template = "Barrel Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Flood Letters"
+		location = 3823
+		division_template = "Barrel Division"
+		start_experience_factor = 0.3
+		}
+division = {
+		name = "Flood Letters"
+		location = 3823
+		division_template = "Barrel Division"
+		start_experience_factor = 0.3
+		}
+}
