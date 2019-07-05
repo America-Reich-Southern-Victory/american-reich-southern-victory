@@ -1,0 +1,119 @@
+add_namespace = usa
+
+# Airforce Debate
+country_event = {
+	id = usa.1
+	title = usa.1.t
+	desc = usa.1.desc
+	picture = GFX_report_event_usa_election_generic
+
+   is_triggered_only = yes
+
+	option = { 	#Expand USAAC
+		name = usa.1.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1
+			}
+		}
+set_global_flag = USA_Airforce_USAAC
+	}
+
+	option = { 
+		name = usa.1.b #Create USAAF
+		ai_chance = {
+			factor = 50
+		}
+set_global_flag = USA_Airforce_USAAF
+	}
+
+}
+
+# Election of 1936
+country_event = {
+	id = usa.3
+	title = usa.3.t
+	desc = usa.3.desc
+	picture = GFX_report_event_usa_election_generic
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		has_elections = yes
+		date > 1936.11.09
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = { 	#4 More Years
+		name = usa.3.a
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 1
+			}
+		}
+set_global_flag = USA_Elections_1936
+set_global_flag = USA_Elections_1936_Socialist		
+add_popularity = {
+    ideology = socialist
+    popularity = 0.15
+}
+	}
+
+	option = { 
+		name = usa.3.b #A Progressive America!
+		ai_chance = {
+			factor = 35
+		}
+set_global_flag = USA_Elections_1936
+set_global_flag = USA_Elections_1936_Liberal	
+add_popularity = {
+    ideology = liberal
+    popularity = 0.2
+}
+set_politics = {
+	ruling_party = liberal
+}
+		
+		
+	}
+option = { 
+		name = usa.3.c #Hoover's the Man
+		ai_chance = {
+			factor = 35
+		}
+set_global_flag = USA_Elections_1936
+set_global_flag = USA_Elections_1936_Libertarian
+add_popularity = {
+    ideology = libertarian
+    popularity = 0.25
+}
+set_politics = {
+	ruling_party = libertarian
+}
+		
+		
+	}
+option = { 
+		name = usa.3.d #Democrat Upset?
+		ai_chance = {
+			factor = 5
+		}
+set_global_flag = USA_Elections_1936
+set_global_flag = USA_Elections_1936_Conservative
+add_popularity = {
+    ideology = conservative
+    popularity = 0.35
+}
+set_politics = {
+	ruling_party = conservative
+}
+		
+		
+	}
+}

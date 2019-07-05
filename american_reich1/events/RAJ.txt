@@ -1,0 +1,140 @@
+add_namespace = raj
+
+country_event = {
+	id = raj.1
+	title = raj.1.t
+	desc = raj.1.desc
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1936.05.05
+		exists = yes
+		tag = RAJ
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = raj.1.a
+		
+		release = PAK
+remove_ideas = {
+    RAJ_marginalized_muslim_community
+}
+			}
+	option = {
+		name = raj.1.b
+		
+		release = PAK
+remove_ideas = {
+    RAJ_marginalized_muslim_community
+}
+PAK = { change_tag_from = RAJ }
+			}
+		}
+		
+country_event = {
+	id = raj.2
+	title = raj.2.t
+	desc = raj.2.desc
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1936.05.05
+		exists = yes
+		tag = RAJ
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = raj.2.a
+		
+		release = BAN
+remove_ideas = {
+    RAJ_marginalized_muslim_community
+}
+add_stability = 0.20
+		add_war_support = 0.20
+			}
+	option = {
+		name = raj.2.b
+		
+		release = BAN
+remove_ideas = {
+    RAJ_marginalized_muslim_community
+}
+add_stability = 0.25
+		add_war_support = 0.4
+BAN = { change_tag_from = RAJ }
+			}
+		}
+		
+country_event = {
+	id = raj.3
+	title = raj.3.t
+	desc = raj.3.desc
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = yes
+	
+	trigger = {
+		exists = yes
+		tag = PAK
+	}
+	
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	option = {
+		name = raj.3.a
+		add_stability = 0.20
+		add_war_support = 0.20
+		load_oob = "PAK_1936"
+		declare_war_on = {
+    target = RAJ
+    type = annex_everything
+}
+			}
+		}
+country_event = {
+	id = raj.4
+	title = raj.4.t
+	desc = raj.4.desc
+	picture = GFX_report_event_generic_ruins
+	
+	fire_only_once = yes
+	
+	trigger = {
+		exists = yes
+		tag = BAN
+	}
+	
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	option = {
+		name = raj.4.a
+		add_stability = 0.20
+		add_war_support = 0.20
+		load_oob = "BAN_1936"
+		declare_war_on = {
+    target = PAK
+    type = annex_everything
+}
+declare_war_on = {
+    target = RAJ
+    type = annex_everything
+}
+			}
+		}

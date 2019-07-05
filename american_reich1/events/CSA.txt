@@ -1,0 +1,41 @@
+add_namespace = csa
+
+#template
+
+country_event = {
+	id = csa.1
+	title = csa.1.t
+	desc = csa.1.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	#Do you want this event to only fire once?
+	fire_only_once = yes #yes/no
+	
+	trigger = { #what needs to be true for event to fire
+	tag = CSA
+	has_government = populist
+	owns_state = 362
+	date > 1936.02.01
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = csa.1.a
+		add_political_power = 100
+		add_stability = 0.05
+		add_war_support = -0.05
+	}
+	option = {
+		name = csa.1.b
+		add_threat = 20
+		declare_war_on = {
+			target = USA
+			type = annex_everything
+		}
+		add_manpower = 10000
+		add_war_support = .15
+	}
+}
