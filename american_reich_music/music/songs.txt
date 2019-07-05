@@ -1,0 +1,329 @@
+
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+music = {
+	song = "song1"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "song2"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "song3"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+			Tag = GER
+		}		
+	}
+}
+
+music = {
+	song = "song4"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+			TAG = GER
+		}		
+	}	
+}
+
+music = {
+	song = "song5"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+			TAG = USA
+		}		
+	}	
+}
+music = {
+	song = "song6"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			TAG = CSA
+		}		
+	}	
+}
+music = {
+	song = "song7"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+music = {
+	song = "song8"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			TAG = MEX
+		}		
+	}	
+}
+music = {
+	song = "song9"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			TAG = SPR
+		}		
+	}	
+}
+music = {
+	song = "song10"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+			TAG = USA
+		}		
+	}	
+}
+music = {
+	song = "song11"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			TAG = USA
+			has_government = democratic
+		}		
+	}	
+}
+music = {
+	song = "song12"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}		
+	}	
+}
+music = {
+	song = "song13"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			TAG = FRA
+		}		
+	}	
+}
+music = {
+	song = "song14"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			TAG = FRA
+		}		
+	}	
+}
+music = {
+	song = "song15"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			TAG = GER
+		}		
+	}	
+}
+music = {
+	song = "song16"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+			TAG = USA
+		}		
+	}	
+}
+music = {
+	song = "song17"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			TAG = RAJ
+		}		
+	}	
+}
+music = {
+	song = "song18"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}		
+	}	
+}
+music = {
+	song = "song19"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			TAG = ENG
+		}		
+	}	
+}
+music = {
+	song = "song20"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			TAG = EGY
+		}		
+	}	
+}
+music = {
+	song = "song21"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+			TAG = USA
+			has_government = democratic
+		}		
+	}	
+}
+music = {
+	song = "song22"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			TAG = MED
+			TAG = ITA
+			TAG = SRI
+		}		
+	}	
+}
+music = {
+	song = "song23"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+music = {
+	song = "song24"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			TAG = AUS
+			TAG = GER
+		}		
+	}	
+}
+music = {
+	song = "song25"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+			TAG = FIN
+			has_government = neutrality
+		}		
+	}	
+}
+music = {
+	song = "song26"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_government = communism
+		}		
+	}	
+}
+music = {
+	song = "song27"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_government = communism
+		}		
+	}	
+}
+music = {
+	song = "song28"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			TAG = USA
+		}		
+	}	
+}

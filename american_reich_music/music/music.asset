@@ -1,0 +1,149 @@
+music = {
+	name = "maintheme"
+	file = "maintheme.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song1"
+	file = "song1.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song2"
+	file = "song2.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song3"
+	file = "song3.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song4"
+	file = "song4.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song5"
+	file = "song5.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song6"
+	file = "song6.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song7"
+	file = "song7.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song8"
+	file = "song8.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song9"
+	file = "song9.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song10"
+	file = "song10.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song11"
+	file = "song11.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song12"
+	file = "song12.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song13"
+	file = "song13.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song14"
+	file = "song14.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song15"
+	file = "song15.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song16"
+	file = "song16.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "song17"
+	file = "song17.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "song18"
+	file = "song18.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song19"
+	file = "song19.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "song20"
+	file = "song20.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "song21"
+	file = "song21.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song22"
+	file = "song22.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song23"
+	file = "song23.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song24"
+	file = "song24.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song25"
+	file = "song25.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song26"
+	file = "song26.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song27"
+	file = "song27.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song28"
+	file = "song28.ogg"
+	volume = 0.65
+}
