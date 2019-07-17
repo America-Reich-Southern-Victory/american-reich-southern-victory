@@ -205,7 +205,7 @@ ai_will_do = {
 	}
 bypass = {
 has_global_flag = USA_Elections_1936
-		} 
+	} 
  } 
 
 #Focus for Keep the Social Democrats
@@ -377,8 +377,8 @@ ai_will_do = {
  } 
 completion_reward = {
 swap_ideas = {
-    remove_idea = USA_medium_taxes
-    add_idea = USA_low_taxes
+    remove_idea = high_taxes
+    add_idea = medium_taxes
    }
   } 
  } 
@@ -461,10 +461,12 @@ ai_will_do = {
  factor = 1
  }
  available = {
-	has_government = liberal
-	has_government = libertarian
-	has_government = conservative
-	has_government = socialist
+	OR = {
+			has_government = liberal
+			has_government = libertarian
+			has_government = socialist
+			has_government = conservative
+				}
 }
 completion_reward = {
 		add_ideas = USA_home_of_the_free
@@ -484,10 +486,12 @@ ai_will_do = {
  factor = 1
  }
  available = {
-	has_government = liberal
-	has_government = libertarian
-	has_government = conservative
-	has_government = socialist
+	OR = {
+			has_government = liberal
+			has_government = libertarian
+			has_government = socialist
+			has_government = conservative
+				}
 }
 completion_reward = {
 add_stability = 0.025
@@ -535,10 +539,12 @@ ai_will_do = {
  factor = 1
  } 
  available = {
-	has_government = liberal
-	has_government = libertarian
-	has_government = conservative
-	has_government = socialist
+		OR = {
+			has_government = liberal
+			has_government = libertarian
+			has_government = socialist
+			has_government = conservative
+				}
 }
 completion_reward = { 
 add_popularity = {
@@ -574,10 +580,12 @@ ai_will_do = {
  factor = 1
  }
  available = {
-	has_government = liberal
-	has_government = libertarian
-	has_government = conservative
-	has_government = socialist
+		OR = {
+			has_government = liberal
+			has_government = libertarian
+			has_government = socialist
+			has_government = conservative
+				}
 }
 completion_reward = {
 add_ideas = USA_encourage_free_thought
@@ -614,10 +622,12 @@ ai_will_do = {
  factor = 1
  }
  available = {
-	has_government = liberal
-	has_government = libertarian
-	has_government = conservative
-	has_government = socialist
+		OR = {
+			has_government = liberal
+			has_government = libertarian
+			has_government = socialist
+			has_government = conservative
+				}
 }
 completion_reward = {
 add_research_slot = 1
@@ -704,10 +714,12 @@ ai_will_do = {
  factor = 1
  }
  available = {
-	has_government = liberal
-	has_government = libertarian
-	has_government = conservative
-	has_government = socialist
+		OR = {
+			has_government = liberal
+			has_government = libertarian
+			has_government = socialist
+			has_government = conservative
+				}
 }
 completion_reward = {
 	add_ideas = USA_equality_act
@@ -1133,14 +1145,15 @@ id = USA_finisheconomicreforms
 icon = GFX_goal_generic_trade
 x = 12
 y = 8
-cost = 5
+cost = 9
 available_if_capitulated = yes 
 prerequisite = { focus = USA_aidingthelibertydefence } 
 prerequisite = { focus = USA_renewedmobilization } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = { 
+}
  } 
 
 #Focus for Continue Social Reforms
@@ -1360,7 +1373,13 @@ prerequisite = { focus = USA_consolidatethepentagon }
 ai_will_do = { 
  factor = 1
  } 
-
+available = {
+has_global_flag = USA_E_Pluribus_Unum
+}
+completion_reward = {
+country_event = { id = usa.2 }
+army_experience = 15
+}
  } 
 
 #Focus for Quality Support
@@ -1426,7 +1445,7 @@ air_experience = 10
  }
 } 
 
-#Focus for Mobile Warfare
+#Focus for Patton's Plan
 focus = { 
 id = USA_mobilewarfare
 icon = GFX_goal_generic_army_tanks
@@ -1440,11 +1459,16 @@ mutually_exclusive = { focus = USA_entrenchthefront }
 mutually_exclusive = { focus = USA_massrecruitthenation } 
 ai_will_do = { 
  factor = 1
+ }
+available = {
+always = no 
+}
+bypass = {
+has_global_flag = USA_Army_Patton
+}
  } 
 
- } 
-
-#Focus for Superior Firepower
+#Focus for Bradley's Plan
 focus = { 
 id = USA_superiorfirepower
 icon = GFX_goal_generic_army_artillery2
@@ -1458,8 +1482,13 @@ mutually_exclusive = { focus = USA_entrenchthefront }
 mutually_exclusive = { focus = USA_massrecruitthenation } 
 ai_will_do = { 
  factor = 1
- } 
-
+ }
+ available = {
+always = no 
+}
+bypass = {
+has_global_flag = USA_Army_Bradley
+}
  } 
 
 #Focus for Motorized Infantry
@@ -1477,7 +1506,7 @@ ai_will_do = {
 
  } 
 
-#Focus for Mass Recruit the Nation
+#Focus for Marshall's Plan
 focus = { 
 id = USA_massrecruitthenation
 icon = GFX_focus_generic_little_entente
@@ -1492,8 +1521,13 @@ mutually_exclusive = { focus = USA_superiorfirepower }
 mutually_exclusive = { focus = USA_ } 
 ai_will_do = { 
  factor = 1
- } 
-
+ }
+ available = {
+always = no 
+}
+bypass = {
+has_global_flag = USA_Army_Marshall
+}
  } 
 
 #Focus for Plan for Conflict
@@ -1710,7 +1744,7 @@ ai_will_do = {
 
  } 
 
-#Focus for Entrench the Front
+#Focus for Kruger's Plan
 focus = { 
 id = USA_entrenchthefront
 icon = GFX_goal_generic_defence
@@ -1725,8 +1759,13 @@ mutually_exclusive = { focus = USA_ }
 mutually_exclusive = { focus = USA_massrecruitthenation } 
 ai_will_do = { 
  factor = 1
- } 
-
+ }
+ available = {
+always = no 
+}
+bypass = {
+has_global_flag = USA_Army_Kruger
+}
  } 
 
 #Focus for Armored Breakthrough
@@ -1904,7 +1943,7 @@ id = USA_fighterfocus
 icon = GFX_goal_generic_air_fighter2
 x = 71
 y = 4
-cost = 5
+cost = 6
 available_if_capitulated = yes 
 prerequisite = { focus = USA_createusaaf focus = USA_expandusaac } 
 ai_will_do = { 
@@ -1980,6 +2019,11 @@ add_tech_bonus = {
     uses = 1
     category = strategic_destruction_tree
 }
+add_tech_bonus = {
+    bonus = 1
+    uses = 1
+    category = cat_strategic_bomber
+}
 }
  } 
 
@@ -1996,7 +2040,18 @@ mutually_exclusive = { focus = USA_strategicbombing }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+add_tech_bonus = {
+    bonus = 1
+    uses = 1
+    category = operational_integrity_tree
+}
+add_tech_bonus = {
+    bonus = 1
+    uses = 1
+    category = tactical_bomber
+}
+}
  } 
 
 #Focus for Centralized Air Control
@@ -2021,7 +2076,7 @@ completion_reward = {
 			}
 		}
 	}
-	bypass = { 373 = { air_base < 2 } }
+	bypass = { 373 = { air_base > 2 } }
  } 
 
 #Focus for Dispersed Air Ports
@@ -2047,7 +2102,7 @@ add_ideas = USA_dispersed_air_command
 			}
 		}
 	}
-	bypass = { 373 = { air_base < 8 } }
+	bypass = { 373 = { air_base > 8 } }
  } 
 
 #Focus for Support the Front
@@ -2056,7 +2111,7 @@ id = USA_supportthefront
 icon = GFX_focus_generic_little_entente
 x = 67
 y = 5
-cost = 5
+cost = 6
 available_if_capitulated = yes 
 prerequisite = { focus = USA_casdevelopment } 
 prerequisite = { focus = USA_airtogroundfocus } 
@@ -2074,13 +2129,15 @@ id = USA_controlthesituation
 icon = GFX_goal_generic_navy_doctrines_tactics
 x = 75
 y = 5
-cost = 5
+cost = 6
 available_if_capitulated = yes 
 prerequisite = { focus = USA_tacticaldestruction focus = USA_strategicbombing } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+add_ideas = USA_control_the_situation
+}
  } 
 
 #Focus for Brewster CAS
@@ -2089,14 +2146,19 @@ id = USA_brewstercas
 icon = GFX_goal_unknown
 x = 68
 y = 6
-cost = 5
+cost = 6
 available_if_capitulated = yes 
 prerequisite = { focus = USA_supportthefront } 
 mutually_exclusive = { focus = USA_hughescas } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+air_experience = 20
+custom_trigger_tooltip = {
+		tooltip = USA_Brewster_CAS
+			}
+		}
  } 
 
 #Focus for Hughes CAS
@@ -2105,15 +2167,20 @@ id = USA_hughescas
 icon = GFX_goal_unknown
 x = 66
 y = 6
-cost = 5
+cost = 6
 available_if_capitulated = yes 
 prerequisite = { focus = USA_supportthefront } 
 mutually_exclusive = { focus = USA_brewstercas } 
 ai_will_do = { 
  factor = 1
  } 
-
- } 
+completion_reward = {
+air_experience = 20
+custom_trigger_tooltip = {
+		tooltip = USA_Hughes_CAS
+			}
+		}
+	} 
 
 #Focus for Expand the Aircorps
 focus = { 
@@ -2121,13 +2188,20 @@ id = USA_expandtheaircorps
 icon = GFX_goal_generic_air_doctrine
 x = 71
 y = 6
-cost = 8
+cost = 6
 available_if_capitulated = yes 
 prerequisite = { focus = USA_centralizedaircontrol focus = USA_dispersedairports } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+add_tech_bonus = {
+    bonus = 1
+    uses = 1
+    category = para_tech
+		}
+	}
+air_experience = 25
  } 
 
 #Focus for Boeing Tactical Bombers
@@ -2136,7 +2210,7 @@ id = USA_boeingtacticalbombers
 icon = GFX_goal_generic_air_bomber
 x = 76
 y = 6
-cost = 5
+cost = 6
 available_if_capitulated = yes 
 prerequisite = { focus = USA_tacticaldestruction } 
 prerequisite = { focus = USA_controlthesituation } 
@@ -2144,7 +2218,12 @@ mutually_exclusive = { focus = USA_douglasstrategicbombers }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+air_experience = 20
+custom_trigger_tooltip = {
+		tooltip = USA_Boeing_Tactical_Bombers
+			}
+		}
  } 
 
 #Focus for Douglas Strategic Bombers
@@ -2153,7 +2232,7 @@ id = USA_douglasstrategicbombers
 icon = GFX_goal_unknown
 x = 74
 y = 6
-cost = 5
+cost = 6
 available_if_capitulated = yes 
 prerequisite = { focus = USA_strategicbombing } 
 prerequisite = { focus = USA_controlthesituation } 
@@ -2162,7 +2241,12 @@ mutually_exclusive = { focus = USA_ }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+air_experience = 20
+custom_trigger_tooltip = {
+		tooltip = USA_Douglas_Strategic_Bombers
+			}
+		}
  } 
 
 #Focus for Finish the Air Reforms
@@ -2171,13 +2255,15 @@ id = USA_finishtheairreforms
 icon = GFX_goal_generic_propaganda
 x = 71
 y = 7
-cost = 8
+cost = 6
 available_if_capitulated = yes 
 prerequisite = { focus = USA_douglasstrategicbombers focus = USA_boeingtacticalbombers focus = USA_hughescas focus = USA_brewstercas } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+air_experience = 25
+}
  } 
 
 #Focus for Freedom Fleet
